@@ -1,0 +1,23 @@
+.ARDIC{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    color: #404026   
+}
+
+.DAVUD{
+    color: #F8F82C;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+h1,p{
+    text-align: center;
+}
+
+header{
+    margin: 80px;
+}
+
+h2{
+    
+}
