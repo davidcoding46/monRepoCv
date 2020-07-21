@@ -1,23 +1,184 @@
-.ARDIC{
-    font-family: 'Raleway';
-    font-weight: lighter;
-    color: #404026   
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.DAVUD{
-    color: #F8F82C;
-    font-family: 'Roboto';
-    font-weight: 900;
+body{
+    display: flex;
+    min-height: 100vh;
+    font-family: roboto;
 }
 
-h1,p{
+aside{
+    background-color: #FECA07;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
     text-align: center;
+    background-color: #404040;
+    margin-top: 40px;
+    padding-top: 4px; 
+    color: #FECA07;
+    font-family: 'roboto';
+    padding-bottom: 2%;
 }
 
-header{
-    margin: 80px;
+#Contact p{
+    padding-top: 20px;
+    font-size: 2.2vmin;
+    margin-left: 20px;
+}
+
+p span{
+    font-weight: bold;
+}
+
+#aproposdemoi p {
+    margin: 20px;
+    font-size: 2.2vmin; 
+    text-align: justify;
+}
+
+#section-loisirs .fas {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 100%;
+}
+
+#section-loisirs {
+    margin-top: auto;
+}
+
+#loisirs{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    flex: 4;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.underline{
+    border-bottom: solid 2px #FECA07;
+    padding-bottom: 1px;
+}
+
+img{
+    border-radius: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    width: 150px;
+}
+
+#imagemobile{
+    display: none;
+}
+
+
+.surname{
+    font-weight: 600;
+    color: #FECA07;
+}
+
+.job{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h2{
-    
+    padding-top: 50px;
+    border-bottom: solid 2px #FECA07;
+    padding-bottom: 10px;
 }
+
+.fas{
+    margin-right: 20px;
+    color: #FECA07;
+}
+
+.far{
+    margin-right: 20px;  
+    color: #FECA07;
+}
+
+.ville{
+    margin-left: 40px;
+}
+
+article {
+    display: flex;
+    padding-top: 20px;
+}
+
+.infos {
+    flex: 1;
+}
+
+.description {
+    flex: 3;
+}
+
+.reco{
+    display: flex;
+    justify-content: space-around;
+} 
+
+/* Responsive */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media all and (max-width: 850px){
+    body{
+        flex-direction: column;
+    }
+    aside{
+        order: 2;
+    }
+    main{
+        order: 1;
+    }
+    #imagemobile{
+        display: block;
+    }
+    #imagedesktop{
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+    .Recommandations{
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 570px){
+    main article{
+        flex-direction: column;
+    }
+    .infos{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
